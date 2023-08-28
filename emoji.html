@@ -7,17 +7,17 @@
             body {
                 margin: 0;
                 padding: 0;
-                background: #e5daf3;
-            }
+                
+                background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80");
+                background-size: cover;
+                }
             .center {
-                /*here the position of the
-            emoji will defined*/
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            /*here we will make the shape of the emoji*/
+        
             .emoji {
                 position: relative;
                 display: inline-block;
@@ -38,8 +38,7 @@
                 width: 120px;
                 animation: face 3s linear infinite;
             }
-            /*here by adding @Keyframes we can
-        move the face along X-axis*/
+        
             @keyframes face {
                 15%,
                 25% {
@@ -54,7 +53,7 @@
                     transform: rotate(0) translateX(0);
                 }
             }
-            /*here the eye brow making part starts*/
+            
             .emoji_brow {
                 left: calc(50% - 3px);
                 height: 6px;
@@ -66,7 +65,7 @@
                 18px 0 0 0 #aa7408, 33px 0 0 0 #aa7408;
                 animation: eye_brow 3s linear infinite;
             }
-            /*here we can move the eye brow part*/
+            
             @keyframes eye_brow {
                 15%,
                 65% {
@@ -93,15 +92,14 @@
                 border-left-color: transparent;
                 border-right-color: transparent;
             }
-            /*after movement the face will
-        look like this*/
+            
             .emoji_brow:before {
                 margin-left: -25px;
             }
             .emoji_brow:after {
                 margin-left: 25px;
             }
-            /*eye part will defined in this part*/
+            
             .emoji_eye {
                 top: 35px;
                 left: calc(50% - 8px);
@@ -112,7 +110,7 @@
                 box-shadow: 25px 0 0 0 #1b2031,
                 -25px 0 0 0 #1b2031;
             }
-            /*mouth will be designed here*/
+            
             .emoji_mouth {
                 
     position: absolute;
@@ -136,7 +134,6 @@
     }
 }
             }
-            /*movement of the mouce will be designed here*/
             @keyframes mouth {
     0% {
         height: 10px;
@@ -148,12 +145,21 @@
         height: 10px;
     }
 }
+footer{
+    padding-top: 130px;   
+    text-align: center;
+background: radial-gradient(circle, rgba(63,17,37,1) 0%, rgba(12,83,167,1) 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;    font-family: papyrus,fantasy;
+  font-size: 25px;
+  font-weight: 700;
+
+}
         </style>
     </head>
     <body>
-        <!-- In this part we will make some div to
-take some different part of area on body part
-        and give the div some class-->
+        
         <div class="center">
             <div class="emoji">
                 <div class="emoji_face">
@@ -163,5 +169,9 @@ take some different part of area on body part
                 </div>
             </div>
         </div>
+
     </body>
+    <footer>
+        <h1><b>Ohh It'zzz Library!!!!</h1>
+    </footer>
 </html>
