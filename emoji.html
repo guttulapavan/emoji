@@ -5,7 +5,7 @@
         <title>Wow Facebook Reaction</title>
         <style>
         .child{
-            padding-top:370px;
+            padding-top:450px;
         }
         h1{
             font-family: Papyrus,fantasy;
@@ -18,8 +18,8 @@ align-items: center;
         }
             body {
                 background-image:url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
-                  /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+                
+  background-repeat: no-repeat; 
   background-size: cover;
   height:500px;
                 margin: 0;
@@ -27,14 +27,11 @@ align-items: center;
                 
             }
             .center {
-                /*here the position of the
-            emoji will defined*/
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            /*here we will make the shape of the emoji*/
             .emoji {
                 position: relative;
                 display: inline-block;
@@ -55,8 +52,6 @@ align-items: center;
                 width: 120px;
                 animation: face 3s linear infinite;
             }
-            /*here by adding @Keyframes we can
-        move the face along X-axis*/
             @keyframes face {
                 15%,
                 25% {
@@ -71,7 +66,6 @@ align-items: center;
                     transform: rotate(0) translateX(0);
                 }
             }
-            /*here the eye brow making part starts*/
             .emoji_brow {
                 left: calc(50% - 3px);
                 height: 6px;
@@ -83,7 +77,6 @@ align-items: center;
                 -18px 0 0 0 #aa7408, -33px 0 0 0 #aa7408,
                 18px 0 0 0 #aa7408, 33px 0 0 0 #aa7408;
             }
-            /*here we can move the eye brow part*/
             @keyframes eye_brow {
                 15%,
                 65% {
@@ -110,15 +103,13 @@ align-items: center;
                 border-left-color: transparent;
                 border-right-color: transparent;
             }
-            /*after movement the face will
-        look like this*/
+            
             .emoji_brow:before {
                 margin-left: -25px;
             }
             .emoji_brow:after {
                 margin-left: 25px;
             }
-            /*eye part will defined in this part*/
             .emoji_eye {
                 top: 35px;
                 left: calc(50% - 8px);
@@ -129,7 +120,6 @@ align-items: center;
                 box-shadow: 25px 0 0 0 #1b2031,
                 -25px 0 0 0 #1b2031;
             }
-            /*mouth will be designed here*/
             .emoji_mouth {
                 
     position: absolute;
@@ -166,17 +156,15 @@ align-items: center;
     }
 }
             }
-            /*movement of the mouce will be designed here*/
+
            
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="child"><h1>Don`t touch me!!!</h1></div>
+            <div class="child"><h1>Don`t Touch Me!!!</h1></div>
         </div>
-        <!-- In this part we will make some div to
-take some different part of area on body part
-        and give the div some class-->
+        
         <div class="center">
             <div class="emoji">
                 <div class="emoji_face">
